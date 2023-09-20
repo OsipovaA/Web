@@ -1,83 +1,140 @@
 <!DOCTYPE html>
-<html lang="ru">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Форматирование</title>
+    <title>Материалы занятия</title>
 </head>
-
 <body>
-<h1 align="center">Форматирование текста</h1>
+<!-- <p>Пример закомментированного фрагмента </p>-->
 
-<p align="center">опробование1</p>
+<h1>Первое занятие. Текст и форматирование</h1>
 
-<p>опробование2<br>опробование3 </p>
-
-<!--
-<p>Пример закомментированного фрагмента </p>
--->
-
-<h3 align="center">Представление заголовка</h3>
-
-<p>
-    <font color="Blue" face="GothicG" size=6> size=6, font - не рекомендуется</font>
+<p> Абзац с отступами (не закрыт тег!)
+<p align="center"> Абзац с отступами и выравниванием по центру </p>
+<p> Абзац с отступами </p>
+Текст без тегов
+текст без отступов
+без нужных тегов будет отображаться в одну строчку
+даже если в самом коде этот текст занимает 4 строки
+<p align="justify">
+    Выравнивание по ширине: Geckos are a group of usually small, usually nocturnal lizards. They are found on every continent except Antarctica.
 </p>
 
+<nobr>Отключили автоматический перенос строк: Geckos are a group of usually small, usually nocturnal lizards. They are found on every continent except Antarctica.Geckos are a group of usually small, usually nocturnal lizards. They are found on every continent except Antarctica.Geckos are a group of usually small, usually nocturnal lizards. They are found on every continent except Antarctica.Geckos are a group of usually small, usually nocturnal lizards. They are found on every continent except Antarctica.Geckos are a group of usually small, usually nocturnal lizards. They are found on every continent except Antarctica.</nobr>
+
+<p lang="ru"> Написано lang="ru" </p>
+<p lang="en"> lang="en"</p>
+
+<h2>Форматирование текста</h2>
+
+<b>Жирный текст: b Полужирное начертание</b>
+<br> <strong>Важность: strong Полужирное начертание</strong>
+<br> <i> i:Курсивное начертание</i>
+<br> <em>Важность: em: Курсивное начертание</em>
+
+<p><b><i> Полужирный курсив </i></b></p>
+
+Текст
+<br><big>Текст больше</big>
+<small>Текст меньше</small>
+
+<p>Верхний индекс sup: x<sup>2</sup>
+    <br>Нижний индекс sub: H<sub>2</sub></p>
+
+<br><mark>Выделяю</mark> текст
+
+<pre>
+Строка 1
+Строка 2
+Пробел 3шт   3шт Пробел
+</pre>
+
+<br>
+Строка 1
+Строка 2
+Пробел 3шт   3шт Пробел
+
+<h6>Справочная информация</h6>
+
+<h2>index Марширов ВВ</h2>
+
+<p>В этом параграфе встроен <span>оригинальный фрагмент</span> </p>
+<p>В текущем параграфе есть<br>разрыв строки</p>
+
+<p id="for_click">кликнуть</p>
+
+<p><s>Пример закомментированного фрагмента</s> </p>
+
 <p>
-    <font size="+1" title="шрифт"> size="+1", font - не рекомендуется</font>
+    <font color="#20b2aa" face="" size=6> size=6, font - не рекомендуется</font>
+</p>
+<p>
+    <font size="+1" title="всплывающая подсказка"> size="+1", font - не рекомендуется</font>
 </p>
 
-<p> C<sub>2</sub>H<sub>5</sub>OH или 3<sup>2</sup>=9</p>
-
-<p><b><i><u> Опробование8 (bold, italic, underline) </u></i></b></p>
-
+<p><b><i><u> bold, italic, underline </u></i></b></p>
 <pre>
     ________________________________________
     |  10      12      13       14       55 |
     |  изменений практически нет         5  |
     ________________________________________
     </pre>
-
 <blockquote>
     вставляем цитату c продолжением на следующей строке c продолжением на следующей строке вставляем цитату c
     продолжением на следующей строке c продолжением на следующей строке
 </blockquote>
-
-<hr color="Red" size="10" width=200>
-
+<hr color="Red" size="50" width=200>
 <p>
 <ul title="Не упорядочные  списки">
     <li>первая строка списка
     <li>вторая строка списка
+        третья строка
 </ul>
 </p>
-
-
 <ol>
     <li> 1-й элемент списка
     <li> 2-й элемент списка
     <li> 3-й элемент списка
 </ol>
 
-<pre>
+<h1>Второе занятие. Ссылки</h1>
 
-Задание 1.1. В ~/public_html/education/formatirovanie/index.html:
+<h2>Простая ссылка</h2>
+<p>Ссылка задаётся через: <a href="адрес_ссылки"> текст_ссылки </a></p>
+<br><a href="https://www.hse.ru/news/edu/860623430.html"> Новость ВШЭ от 20 сен 2023 </a>
 
-Создать создать уникальную тематическую страницу  будущего сайта , содержащую:
+<br>https://www.hse.ru/data/2022/02/HSE_Buklet_2022.pdf#paragraph_1
 
-Основные структурные элементы head, tite, body и рассмотренныые выше элементы
-форматирования текста:заголовки, параграфы, шрифты (размер, цвет), индексы, степени, списки
+<h2>Открытие странички</h2>
+<br><a href="https://www.hse.ru/" target="_blank"> Открыть ссылку https://www.hse.ru/ в новом окне _blank</a>
+<br><a href="https://www.hse.ru/" target="_self">Открыть ссылку https://www.hse.ru/ в текущем окне _self </a>
+<br><a href="https://www.hse.ru/">Открыть ссылку https://www.hse.ru/ в текущем окне </a>
+<br><a onclick="window.open('https://www.hse.ru/','_blank');"style="cursor:pointer"> Открыть ссылку https://www.hse.ru/ в новом окне через javascript </a>
 
-Вложенные ненумерованные списки.На первом уровне 3 элемента, на втором уровне - два элемента. 1-й уровень - диск, 2-й уровень - квадрат
+<h2>Применяем к ссылке атрибут title</h2>
 
-Вложенные нумерованные списки.На первом уровне два элемента, на втором -три.  1-й уровень - римские, 2-й -арабские - отсчет с 3
+<br><a href="https://www.hse.ru/" title="всплывающая подсказка">атрибут title-всплывающая подсказка</a>
+<br><a href="https://www.hse.ru/" title="всплывающая подсказка" target="_blank">атрибут title-всплывающая подсказка</a>
+<br><a href="https://www.hse.ru/" target="_blank" title="здесь дополнительная информация о ссылке" >атрибут title-всплывающая подсказка</a>
 
-Горизонтальную линию - в конце страницы, выравнивание-  по центру, высота 20 пикселей, 45% общей ширины
+<h2>URL-адреса и пути к файлам</h2>
+<br>Корень структуры - каталог OWT23
+<br><a href="1. typography.html">файл из этого же каталога</a>
+<br><a href="3. img/img.html">Перемещение вниз в подкаталоги</a>
+<br> Перемещение через ../
 
-Задание 1.2. В ~/public_html/education/formatirovanie/passwd.html:
-
-Создать страницу отображающую содержание вторую и третью страницы паспорта. Личные данные изменить, исполmзовать ранее изученные материалы
-
-</pre>
+<h2>Тип/вид адреса ссылки html</h2>
+<br>1) Локальный адрес ссылки html - 2. link.html
+<br><a href="2. link.html">Локальный адрес ссылки html - 2. link.html</a>
+<br><a href="1. typography.html">Локальный адрес ссылки html - 1. typography.html</a>
+<br><a href="img.html">Локальный адрес ссылки html - img.html выдаёт ошибку, файл в другой папке!</a>
+<br>2) Абсолютный адрес ссылки html - https://www.wm-school.ru/tags/symbols.html
+<br><a href="https://www.wm-school.ru/tags/symbols.html">Абсолютный адрес ссылки html</a>
+<br>3) Абсолютный адрес ссылки без http/https - //www.wm-school.ru/tags/symbols.html
+<br><a href="//www.wm-school.ru/tags/symbols.html">Абсолютный адрес ссылки без http/https</a>
+<br>4) Ссылки html без домена /2. link.html
+<br><a href="/2. link.html">Ссылки html без домена</a>
+<br>5) Пустой атрибут href
+<br><a href="">Пустой атрибут href</a>
 </body>
 </html>
